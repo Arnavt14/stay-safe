@@ -99,7 +99,7 @@ IMAGE_HEIGHT, IMAGE_WIDTH = 64, 64  # dimensions of the frame
 SEQUENCE_LENGTH = 20  # no owf frames of a video which would be fed
 DATASET_DIR = r"New folder/"
 
-CLASSES_LIST = ["FIGHT", "NOFIGHT"]
+CLASSES_LIST = ["Fight", "noFight"]
 
 
 def frames_extraction(video_path):
