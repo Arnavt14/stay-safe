@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'staysafe2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2B2B0D580B79443FB2B96B19C0111147 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_68CEB77BCB144F1B99ABF0FAD0B48778 }}
