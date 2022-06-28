@@ -27,7 +27,7 @@ random.seed(seed_constant)
 tf.random.set_seed(seed_constant)
 
 plt.figure(figsize=(20, 20))
-_2classes = os.listdir(r"stay-safe/New folder")
+_2classes = os.listdir(r"New folder")
 random_range = random.sample(range(len(_2classes)), 2)
 
 for counter, i in enumerate(random_range, 1):
@@ -35,13 +35,13 @@ for counter, i in enumerate(random_range, 1):
     selected_class_Name = _2classes[i]
 
     # Retrieve the list of all the video files present in the randomly selected Class Directory.
-    video_files_names_list = os.listdir(fr'stay-safe/New folder/{selected_class_Name}')
+    video_files_names_list = os.listdir(fr'New folder/{selected_class_Name}')
     # Randomly select a video file from the list retrieved from the randomly selected Class Directory.
     selected_video_file_name = random.choice(video_files_names_list)
 
     # Initialize a VideoCapture object to read from the video File.
     video_reader = cv2.VideoCapture(
-        fr'stay-safe/New folder/{selected_class_Name}/{selected_video_file_name}')
+        fr'New folder/{selected_class_Name}/{selected_video_file_name}')
 
     # Read the first frame of the video file.
     _, bgr_frame = video_reader.read()
@@ -61,7 +61,7 @@ for counter, i in enumerate(random_range, 1):
     plt.axis('off')
 
 plt.figure(figsize=(20, 20))
-_2classes = os.listdir(r"stay-safe/New folder")
+_2classes = os.listdir(r"New folder")
 random_range = random.sample(range(len(_2classes)), 2)
 
 for counter, i in enumerate(random_range, 1):
@@ -69,14 +69,14 @@ for counter, i in enumerate(random_range, 1):
     selected_class_Name = _2classes[i]
 
     # Retrieve the list of all the video files present in the randomly selected Class Directory.
-    video_files_names_list = os.listdir(fr'stay-safe/New folder/{selected_class_Name}')
+    video_files_names_list = os.listdir(fr'New folder/{selected_class_Name}')
 
     # Randomly select a video file from the list retrieved from the randomly selected Class Directory.
     selected_video_file_name = random.choice(video_files_names_list)
 
     # Initialize a VideoCapture object to read from the video File.
     video_reader = cv2.VideoCapture(
-        fr'C:\Users\\tyagi\Downloads\fight-detection-surv-dataset-master/{selected_class_Name}/{selected_video_file_name}')
+        fr'New folder/{selected_class_Name}/{selected_video_file_name}')
 
     # Read the first frame of the video file.
     _, bgr_frame = video_reader.read()
@@ -97,7 +97,7 @@ for counter, i in enumerate(random_range, 1):
 
 IMAGE_HEIGHT, IMAGE_WIDTH = 64, 64  # dimensions of the frame
 SEQUENCE_LENGTH = 20  # no owf frames of a video which would be fed
-DATASET_DIR = r"stay-safe/New folder/"
+DATASET_DIR = r"New folder/"
 
 CLASSES_LIST = ["FIGHT", "NOFIGHT"]
 
