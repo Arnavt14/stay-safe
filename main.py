@@ -8,14 +8,6 @@ import folium
 #Firebase config keys
 
 firebaseConfig = {
-  'apiKey': "AIzaSyDa8RyPDwMVj9Tw0XyPi7QSdcOOh2_wkHY",
-  'authDomain': "stay-safe-fa2dd.firebaseapp.com",
-  'databaseURL': "https://stay-safe-fa2dd-default-rtdb.firebaseio.com",
-  'projectId': "stay-safe-fa2dd",
-  'storageBucket': "stay-safe-fa2dd.appspot.com",
-  'messagingSenderId': "765879193502",
-  'appId': "1:765879193502:web:53588b7dd1cb2bcaf4108f",
-  'measurementId': "G-Q5VGFLKBXH"
 };
 
 
